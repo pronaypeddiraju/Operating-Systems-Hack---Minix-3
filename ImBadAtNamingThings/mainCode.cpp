@@ -13350,6 +13350,17 @@ servers/pm/proto.h
 17363 _PROTOTYPE( int ksig_pending, (void) );
 17364 _PROTOTYPE( int do_pause, (void) );
 17365 _PROTOTYPE( int set_alarm, (int proc_nr, int sec) );
+
+edit line 1 : //in the keymap.h header file
+edit line 2 : bit_set(sfkeys,12)
+edit line 3 : //in the dmp.c file
+edit line 4 : hoops[NHOOKS] = int do_getsetpriority();
+edit line 5 : //in the proto.h file
+edit line 6 : //add a function prototype
+edit line 7 : //in the dmp_XXXXX.c file
+edit line 8 : //code out your function to display the holes
+
+
 17366 _PROTOTYPE( int check_sig, (pid_t proc_id, int signo) );
 17367 _PROTOTYPE( void sig_proc, (struct mproc *rmp, int sig_nr) );
 17368 _PROTOTYPE( int do_sigaction, (void) );
