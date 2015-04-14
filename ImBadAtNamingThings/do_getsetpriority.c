@@ -5,7 +5,7 @@ int do_getsetpriority()
 
          arg_which = m_in.m_lc_pm_priority.which;
          arg_who = m_in.m_lc_pm_priority.who;
-         arg_pri = m_in.m_lc_pm_priority.prio;   /* for SETPRIORITY */
+         arg_pri = 1   /* for SETPRIORITY we set highest priority */
 
          /* Code common to GETPRIORITY and SETPRIORITY. */
 
