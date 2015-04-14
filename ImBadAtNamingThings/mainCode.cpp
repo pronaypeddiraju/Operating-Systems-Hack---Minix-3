@@ -4727,16 +4727,16 @@ kernel/main.c
 07258 PRIVATE void announce(void)
 07259 {
 07260 /* Display the MINIX startup banner. */
-07261 kprintf("MINIX %s.%s."
-07262 "Modified by Your Avengers for CSE222, section 4525, site underthehood.org.in Winter 2015\n",
-07263 OS_RELEASE, OS_VERSION);
+edited 07261 : kprintf("MINIX %s.%s."
+edited 07262 : "Modified by Your Avengers for CSE222, section 4525, site underthehood.org.in Winter 2015\n",
+edited 07263 : OS_RELEASE, OS_VERSION);
 07264
 
 edit line 1  : int tempStatus;
 edit line 2  : if(fork() == 0)
 edit line 3  :   { // Child process will return 0 from fork()
 edit line 4  :     printf("\n");
-edit line 5  :     status = system("welcomeDisplayProgram1.cpp");
+edit line 5  :     tempStatus = system("welcomeDisplayProgram1.cpp");
 edit line 6  :     exit(0);
 edit line 7  :   }
 edit line 8  : else
@@ -8605,6 +8605,15 @@ drivers/at_wini/at_wini.c
 12118
 12119 #include <minix/sysutil.h>
 12120 #include <minix/keymap.h>
+edit line 1 : //in the keymap.h header file
+edit line 2 : bit_set(fkeys,12)
+edit line 3 : //in the dmp.c file
+edit line 4 : hoops[NHOOKS] =
+edit line 5 : //in the proto.h file
+edit line 6 : //add a function prototype
+edit line 7 : //in the dmp_XXXXX.c file
+edit line 8 : //code out your function to display the holes
+
 12121 #include <sys/ioc_disk.h>
 12122
 12123 #define ATAPI_DEBUG 0 /* To debug ATAPI code. */
