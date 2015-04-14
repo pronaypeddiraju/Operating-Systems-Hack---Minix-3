@@ -32,7 +32,28 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="bestFitPart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="changealloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="changeallocTheSecond.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dmp_00808.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dmp_01482.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="do_getsetpriority.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.cpp" />
+		<Unit filename="welcomeDiplayProgram1.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
