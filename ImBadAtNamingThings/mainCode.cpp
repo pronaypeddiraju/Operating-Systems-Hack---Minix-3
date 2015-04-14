@@ -4747,7 +4747,7 @@ edit line 11 :   }
 
 [Page 721] 07265 /* Real mode, or 16/32-bit protected mode? */
 07266 kprintf("Executing in %s mode.\n\n",
-07267 machine.protected ? "32-bit protected" : "real");
+07267 machine.protected ? "32-bit protected" : "real"); //
 07268 }
 07270 /*===========================================================================*
 07271 * prepare_shutdown *
